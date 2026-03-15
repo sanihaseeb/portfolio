@@ -63,6 +63,19 @@ export const projects = [
     accentColor: '#9D4EDD',
     icon: '💬',
   },
+  {
+    id: 'notes-cli',
+    name: 'notes-cli',
+    subtitle: 'CLI Note-Taking App',
+    description:
+      'A terminal-based note-taking app built in Python with a clean command set — add, list, search, edit, and delete notes. Features colored output, JSON persistence, and is installable as a native CLI command.',
+    tech: ['Python', 'Typer', 'JSON', 'CLI'],
+    github: 'https://github.com/sanihaseeb/notes-cli',
+    live: null,
+    gradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #92400E 100%)',
+    accentColor: '#F59E0B',
+    icon: '📝',
+  },
 ]
 
 export const experience = [
