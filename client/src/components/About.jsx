@@ -1,6 +1,13 @@
 import { education } from '../data/portfolio'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
+const companies = [
+  { name: 'Citigroup',      color: '#003B70' },
+  { name: 'Architek Health',color: '#10B981' },
+  { name: 'Manulife',       color: '#00A758' },
+  { name: 'Nuance',         color: '#0078D4' },
+]
+
 const stats = [
   { value: '3+', label: 'Years of Experience', gradient: true },
   { value: '40%', label: 'Throughput Gain via AI', gradient: true },
@@ -17,6 +24,14 @@ export default function About() {
         <div className="section-header">
           <div className="section-label fade-up">About Me</div>
           <h2 className="section-title fade-up delay-1">Passionate about building things that scale</h2>
+          <div className="about-companies fade-up delay-2">
+            <span className="about-companies-label">Worked at</span>
+            {companies.map(c => (
+              <span key={c.name} className="about-company-badge" style={{ background: c.color }}>
+                {c.name}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="about-grid">
