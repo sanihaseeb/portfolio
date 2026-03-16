@@ -1,6 +1,6 @@
 import { personalInfo } from '../data/portfolio'
 
-const topSkills = ['Java', 'TypeScript', 'React', 'Node.js', 'AWS', 'Spring Boot']
+const topSkills = ['Java', 'TypeScript', 'React', 'Node.js', 'AWS', 'LLM APIs']
 
 const companies = [
   { name: 'Citi', color: '#003B70' },
@@ -78,6 +78,11 @@ export default function Hero() {
               <div className="hero-card-status">
                 <span className="hero-card-status-dot" />
                 Currently at Citigroup, Mississauga ON
+              </div>
+
+              <div className="hero-card-status" style={{ marginTop: '8px', background: 'rgba(99,102,241,0.08)', borderColor: 'rgba(99,102,241,0.25)' }}>
+                <span style={{ fontSize: '12px' }}>🤖</span>
+                AI-integrated dev · 40% throughput gain
               </div>
 
               <div className="hero-card-skills">

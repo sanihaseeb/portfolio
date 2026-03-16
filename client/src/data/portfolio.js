@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: 'Sani Haseeb',
   title: 'Full-Stack Software Engineer',
-  tagline: '3+ years building and scaling enterprise applications across financial institutions and health-tech startups.',
+  tagline: '3+ years building enterprise applications at scale — and integrating LLMs and AI agents to ship 40% faster.',
   location: 'Mississauga, ON',
   email: 'muhammad.s.haseeb@mail.mcgill.ca',
   github: 'https://github.com/sanihaseeb',
@@ -110,7 +110,8 @@ export const experience = [
       'Own the full SDLC for a mission-critical deal settlement platform using Java, Spring Boot, and TypeScript.',
       'Architected an in-house Entitlements Microservice, eliminating third-party dependencies and reducing downtime.',
       'Migrated 11 microservices to Java 17 and Spring Boot 3.x, resolving security vulnerabilities.',
-      'Achieved 5× speed improvement integrating Claude, GitHub Copilot, Devin, and Gemini into daily workflows.',
+      'Integrated Claude Code, Devin, GitHub Copilot, and Gemini into the team\'s dev workflow — increasing throughput by 40% and cutting review cycles significantly.',
+      'Built LLM-powered tooling directly into internal codebases via API integrations with GPT-4 and Claude.',
       'Mentored and onboarded 6 engineers within a year across the full development cycle.',
     ],
   },

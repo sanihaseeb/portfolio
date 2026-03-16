@@ -3,9 +3,9 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const stats = [
   { value: '3+', label: 'Years of Experience', gradient: true },
+  { value: '40%', label: 'Throughput Gain via AI', gradient: true },
   { value: '11', label: 'Microservices Migrated', gradient: false },
   { value: '6', label: 'Engineers Mentored', gradient: false },
-  { value: '95%', label: 'Order Throughput Boost', gradient: true },
 ]
 
 export default function About() {
@@ -28,8 +28,9 @@ export default function About() {
             </p>
             <p className="about-text">
               I thrive across the entire SDLC: from architecting microservices and designing APIs, to shipping
-              polished frontends and setting up CI/CD pipelines. I'm a strong believer in AI-augmented development
-              and actively integrate tools like Claude, GitHub Copilot, and Devin into my workflow.
+              polished frontends and setting up CI/CD pipelines. I'm a strong believer in AI-augmented development —
+              I've integrated LLM APIs (GPT-4, Claude) directly into production codebases, and use tools like
+              Claude Code and Devin daily, resulting in a <strong>40% throughput increase</strong> across my team.
             </p>
             <p className="about-text">
               Outside of enterprise work, I enjoy building personal projects that sharpen my skills and solve real
