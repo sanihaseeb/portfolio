@@ -37,7 +37,7 @@ export default function NotesCLIPreview() {
         { id: 1, text: 'review PR for auth service',    time: '2026-03-15 09:12', color: '#06B6D4' },
         { id: 2, text: 'buy groceries after standup',   time: '2026-03-15 10:30', color: '#06B6D4' },
         { id: 3, text: 'read Python docs — chapter 4',  time: '2026-03-15 11:05', color: '#06B6D4' },
-        { id: 4, text: 'push portfolio to GitHub',      time: '2026-03-15 13:22', color: '#06B6D4' },
+        { id: 4, text: 'fix pagination bug in API',     time: '2026-03-15 13:22', color: '#06B6D4' },
       ].map((note, i) => (
         <g key={note.id}>
           <text x="16" y={76 + i * 18} fill={note.color}
@@ -57,7 +57,7 @@ export default function NotesCLIPreview() {
       </text>
       <text x="72" y="160" fill="rgba(255,255,255,0.35)" fontSize="10" fontFamily="monospace">$</text>
       <text x="86" y="160" fill="white" fontSize="10" fontFamily="monospace">
-        notes add "ship portfolio site"
+        notes add "follow up on code review"
       </text>
 
       {/* Output: saved */}
@@ -71,13 +71,13 @@ export default function NotesCLIPreview() {
       </text>
       <text x="72" y="198" fill="rgba(255,255,255,0.35)" fontSize="10" fontFamily="monospace">$</text>
       <text x="86" y="198" fill="white" fontSize="10" fontFamily="monospace">
-        notes search "portfolio"
+        notes search "review"
       </text>
 
       {/* Search result */}
       <text x="16" y="216" fill="#06B6D4" fontSize="10" fontFamily="monospace" fontWeight="700">[5]</text>
       <text x="40" y="216" fill="rgba(255,255,255,0.85)" fontSize="10" fontFamily="monospace">
-        ship portfolio site
+        follow up on code review
       </text>
       <text x="210" y="216" fill="rgba(255,255,255,0.3)" fontSize="8.5" fontFamily="monospace">
         (2026-03-15 14:02)
