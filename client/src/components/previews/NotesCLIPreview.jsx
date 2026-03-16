@@ -35,7 +35,7 @@ export default function NotesCLIPreview() {
       {/* Output: notes */}
       {[
         { id: 1, text: 'review PR for auth service',    time: '2026-03-15 09:12', color: '#06B6D4' },
-        { id: 2, text: 'buy groceries after standup',   time: '2026-03-15 10:30', color: '#06B6D4' },
+        { id: 2, text: 'update API rate limiting logic',  time: '2026-03-15 10:30', color: '#06B6D4' },
         { id: 3, text: 'read Python docs — chapter 4',  time: '2026-03-15 11:05', color: '#06B6D4' },
         { id: 4, text: 'fix pagination bug in API',     time: '2026-03-15 13:22', color: '#06B6D4' },
       ].map((note, i) => (
