@@ -4,7 +4,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const stats = [
   { value: '3+', label: 'Years of Experience', gradient: true },
   { value: '40%', label: 'Throughput Gain via AI', gradient: true },
-  { value: '11', label: 'Microservices Migrated', gradient: false },
+  { value: '95%', label: 'API Order Latency Reduced', gradient: false },
   { value: '6', label: 'Engineers Mentored', gradient: false },
 ]
 
