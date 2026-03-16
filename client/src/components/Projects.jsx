@@ -32,11 +32,15 @@ export default function Projects() {
                 {/* Laptop mockup header */}
                 <div className="project-card-header">
                   <LaptopMockup>
-                    {Preview ? <Preview /> : (
-                      <div style={{ background: project.gradient, width: '100%', height: '100%',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontSize: '3rem' }}>{project.icon}</div>
-                    )}
+                    {project.screenshot
+                      ? <img src={project.screenshot} alt={`${project.name} screenshot`}
+                          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                      : Preview
+                        ? <Preview />
+                        : <div style={{ background: project.gradient, width: '100%', height: '100%',
+                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            fontSize: '3rem' }}>{project.icon}</div>
+                    }
                   </LaptopMockup>
                 </div>
 

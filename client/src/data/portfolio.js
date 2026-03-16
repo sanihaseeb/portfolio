@@ -50,6 +50,7 @@ export const projects = [
     accentColor: '#3B82F6',
     icon: '📈',
     preview: 'StockPulse',
+    screenshot: '/screenshots/stockpulse.png',
   },
   {
     id: 'weather-app',
@@ -64,6 +65,7 @@ export const projects = [
     accentColor: '#48CAE4',
     icon: '🌤',
     preview: 'SkyPulse',
+    screenshot: '/screenshots/skypulse.png',
   },
   {
     id: 'chat-app',
@@ -78,6 +80,7 @@ export const projects = [
     accentColor: '#9D4EDD',
     icon: '💬',
     preview: 'ChatApp',
+    screenshot: '/screenshots/chatapp.png',
   },
   {
     id: 'notes-cli',
