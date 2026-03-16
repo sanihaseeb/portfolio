@@ -50,7 +50,6 @@ export const projects = [
     accentColor: '#3B82F6',
     icon: '📈',
     preview: 'StockPulse',
-    screenshot: '/screenshots/stockpulse.png',
   },
   {
     id: 'weather-app',
