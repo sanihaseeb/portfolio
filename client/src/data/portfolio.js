@@ -38,6 +38,20 @@ export const skills = [
 
 export const projects = [
   {
+    id: 'stock-app',
+    name: 'StockPulse',
+    subtitle: 'Financial Trading Dashboard',
+    description:
+      'Real-time stock market dashboard with live price tracking, interactive charts, watchlists, and detailed financial data. Built for traders who want fast, clean market data at a glance.',
+    tech: ['React', 'Vite', 'Finance API', 'CSS'],
+    github: 'https://github.com/sanihaseeb/stock-app',
+    live: 'http://localhost:5173',
+    gradient: 'linear-gradient(135deg, #0F172A 0%, #1E3A5F 100%)',
+    accentColor: '#3B82F6',
+    icon: '📈',
+    preview: 'StockPulse',
+  },
+  {
     id: 'weather-app',
     name: 'SkyPulse',
     subtitle: 'Weather Application',
@@ -45,10 +59,11 @@ export const projects = [
       'Real-time weather app with a dynamic aurora-themed UI that adapts visually to weather conditions. Features 7-day forecasts, city autocomplete with debouncing, browser geolocation, and glassmorphism-styled cards.',
     tech: ['React', 'Vite', 'Open-Meteo API', 'CSS'],
     github: 'https://github.com/sanihaseeb/weather-app',
-    live: null,
+    live: 'https://sanihaseeb.github.io/weather-app/',
     gradient: 'linear-gradient(135deg, #48CAE4 0%, #0096C7 45%, #03045E 100%)',
     accentColor: '#48CAE4',
     icon: '🌤',
+    preview: 'SkyPulse',
   },
   {
     id: 'chat-app',
@@ -62,6 +77,7 @@ export const projects = [
     gradient: 'linear-gradient(135deg, #9D4EDD 0%, #5A189A 50%, #240046 100%)',
     accentColor: '#9D4EDD',
     icon: '💬',
+    preview: 'ChatApp',
   },
   {
     id: 'notes-cli',
@@ -75,6 +91,7 @@ export const projects = [
     gradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #92400E 100%)',
     accentColor: '#F59E0B',
     icon: '📝',
+    preview: 'NotesCLI',
   },
 ]
 
