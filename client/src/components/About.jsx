@@ -38,8 +38,8 @@ export default function About() {
           <div className="fade-up delay-1">
             <p className="about-text">
               I'm a full-stack software engineer with over 3 years of experience designing, building, and scaling
-              enterprise-grade applications — from mission-critical financial systems at <strong>Citigroup</strong> to
-              health-tech platforms at <strong>Architek Health</strong>.
+              enterprise-grade applications — from mission-critical financial systems in banking to
+              health-tech platforms and insurance.
             </p>
             <p className="about-text">
               I thrive across the entire SDLC: from architecting microservices and designing APIs, to shipping
