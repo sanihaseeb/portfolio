@@ -45,7 +45,7 @@ export const projects = [
       'Real-time stock market dashboard with live price tracking, interactive charts, watchlists, and detailed financial data. Built for traders who want fast, clean market data at a glance.',
     tech: ['React', 'Vite', 'Finance API', 'CSS'],
     github: 'https://github.com/sanihaseeb/stock-app',
-    live: 'http://localhost:5173',
+    live: 'https://sanihaseeb.github.io/stock-app/',
     gradient: 'linear-gradient(135deg, #0F172A 0%, #1E3A5F 100%)',
     accentColor: '#3B82F6',
     icon: '📈',
