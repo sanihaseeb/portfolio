@@ -2,10 +2,10 @@ import { education } from '../data/portfolio'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const companies = [
-  { name: 'Citigroup',      color: '#003B70' },
-  { name: 'Architek Health',color: '#10B981' },
-  { name: 'Manulife',       color: '#00A758' },
-  { name: 'Nuance',         color: '#0078D4' },
+  { name: 'Citigroup',       logo: '/logos/citi.png',      url: 'https://www.citigroup.com' },
+  { name: 'Architek Health', logo: '/logos/architek.jpg',  url: 'https://www.architekhealth.com' },
+  { name: 'Manulife',        logo: '/logos/manulife.svg',  url: 'https://www.manulife.com' },
+  { name: 'Microsoft',       logo: '/logos/microsoft.png', url: 'https://www.nuance.com' },
 ]
 
 const stats = [
@@ -27,9 +27,11 @@ export default function About() {
           <div className="about-companies fade-up delay-2">
             <span className="about-companies-label">Worked at</span>
             {companies.map(c => (
-              <span key={c.name} className="about-company-badge" style={{ background: c.color }}>
-                {c.name}
-              </span>
+              <a key={c.name} href={c.url} target="_blank" rel="noreferrer"
+                className="about-company-logo">
+                <img src={c.logo} alt={c.name} />
+                <span className="about-company-name">{c.name}</span>
+              </a>
             ))}
           </div>
         </div>
@@ -37,19 +39,19 @@ export default function About() {
         <div className="about-grid">
           <div className="fade-up delay-1">
             <p className="about-text">
-              I'm a full-stack software engineer with over 3 years of experience designing, building, and scaling
-              enterprise-grade applications — from mission-critical financial systems in banking to
-              health-tech platforms and insurance.
+              I'm a full-stack engineer with 3+ years building systems that handle real load — mission-critical
+              deal settlement in financial services, real-time health-tech platforms, and enterprise insurance tooling.
+              I own the full SDLC: architecture, APIs, frontends, CI/CD.
             </p>
             <p className="about-text">
-              I thrive across the entire SDLC: from architecting microservices and designing APIs, to shipping
-              polished frontends and setting up CI/CD pipelines. I'm a strong believer in AI-augmented development —
-              I've integrated LLM APIs (GPT-4, Claude) directly into production codebases, and use tools like
-              Claude Code and Devin daily, resulting in a <strong>40% throughput increase</strong> across my team.
+              What sets me apart is how I build. I embed AI directly into my workflow — integrating LLM APIs
+              (Claude, GPT-4) into production systems, and using tools like{' '}
+              <strong>Claude Code</strong> and <strong>Devin</strong> to move faster without cutting corners.
+              That's translated into a <strong>40% throughput gain</strong> on everything I ship.
             </p>
             <p className="about-text">
-              Outside of enterprise work, I enjoy building personal projects that sharpen my skills and solve real
-              problems — from real-time chat apps to weather dashboards.
+              Outside of work I build side projects to stay sharp — real-time chat, stock dashboards,
+              CLI tools. If it's an interesting engineering problem, I'm probably already tinkering with it.
             </p>
 
             <div className="about-education">

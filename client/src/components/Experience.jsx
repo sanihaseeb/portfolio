@@ -15,8 +15,10 @@ export default function Experience() {
         <div className="experience-list">
           {experience.map((job, i) => (
             <div key={job.company} className={`exp-card fade-up delay-${i + 1}`}>
-              <div className="exp-logo" style={{ background: job.color }}>
-                {job.logo}
+              <div className="exp-logo" style={{ background: job.logoImg ? '#fff' : job.color }}>
+                {job.logoImg
+                  ? <img src={job.logoImg} alt={job.company} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '6px' }} />
+                  : job.logo}
               </div>
               <div>
                 <div className="exp-role">{job.role}</div>

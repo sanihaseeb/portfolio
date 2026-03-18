@@ -28,18 +28,26 @@ export default function Projects() {
           {projects.map((project, i) => {
             const Preview = previewMap[project.preview]
             return (
-              <div key={project.id} className={`project-card fade-up delay-${i + 1}`}>
+              <div
+                key={project.id}
+                className={`project-card fade-up delay-${i + 1}`}
+                style={{ '--accent': project.accentColor }}
+              >
                 {/* Laptop mockup header */}
                 <div className="project-card-header">
                   <LaptopMockup>
-                    {project.screenshot
-                      ? <img src={project.screenshot} alt={`${project.name} screenshot`}
+                    {project.video
+                      ? <video autoPlay loop muted playsInline
+                          src={project.video}
                           style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
-                      : Preview
-                        ? <Preview />
-                        : <div style={{ background: project.gradient, width: '100%', height: '100%',
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            fontSize: '3rem' }}>{project.icon}</div>
+                      : project.screenshot
+                        ? <img src={project.screenshot} alt={`${project.name} screenshot`}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                        : Preview
+                          ? <Preview />
+                          : <div style={{ background: project.gradient, width: '100%', height: '100%',
+                              display: 'flex', alignItems: 'center', justifyContent: 'center',
+                              fontSize: '3rem' }}>{project.icon}</div>
                     }
                   </LaptopMockup>
                 </div>

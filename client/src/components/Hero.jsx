@@ -1,14 +1,46 @@
+import { useState, useEffect } from 'react'
 import { personalInfo } from '../data/portfolio'
+
+const TITLES = ['Full-Stack Software Engineer', 'Backend Architect']
+
+function useTypingTitle() {
+  const [titleIdx, setTitleIdx] = useState(0)
+  const [displayed, setDisplayed] = useState('')
+  const [deleting, setDeleting] = useState(false)
+
+  useEffect(() => {
+    const target = TITLES[titleIdx]
+    let timeout
+
+    if (!deleting && displayed.length < target.length) {
+      timeout = setTimeout(() => setDisplayed(target.slice(0, displayed.length + 1)), 60)
+    } else if (!deleting && displayed.length === target.length) {
+      timeout = setTimeout(() => setDeleting(true), 2000)
+    } else if (deleting && displayed.length > 0) {
+      timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35)
+    } else if (deleting && displayed.length === 0) {
+      setDeleting(false)
+      setTitleIdx((titleIdx + 1) % TITLES.length)
+    }
+
+    return () => clearTimeout(timeout)
+  }, [displayed, deleting, titleIdx])
+
+  return displayed
+}
 
 const topSkills = ['Java', 'TypeScript', 'React', 'Node.js', 'AWS', 'LLM APIs']
 
 const companies = [
-  { name: 'Citi', color: '#003B70' },
-  { name: 'Architek', color: '#10B981' },
-  { name: 'Manulife', color: '#00A758' },
+  { name: 'Citi',      logo: '/logos/citi.png',      url: 'https://www.citigroup.com' },
+  { name: 'Architek',  logo: '/logos/architek.jpg',  url: 'https://www.architekhealth.com' },
+  { name: 'Manulife',  logo: '/logos/manulife.svg',  url: 'https://www.manulife.com' },
+  { name: 'Microsoft', logo: '/logos/microsoft.png', url: 'https://www.nuance.com' },
 ]
 
 export default function Hero() {
+  const typedTitle = useTypingTitle()
+
   return (
     <section className="hero" id="home">
       <div className="hero-bg">
@@ -31,7 +63,7 @@ export default function Hero() {
             </h1>
 
             <p className="hero-title fade-up visible delay-2">
-              Full-Stack Software Engineer
+              {typedTitle}<span className="hero-cursor">|</span>
             </p>
 
             <p className="hero-tagline fade-up visible delay-3">
@@ -68,7 +100,9 @@ export default function Hero() {
           <div className="hero-card-wrapper fade-up visible delay-2">
             <div className="hero-card">
               <div className="hero-card-header">
-                <div className="hero-card-avatar">SH</div>
+                <div className="hero-card-avatar-ring">
+                  <img src="/avatar.png" alt="Sani Haseeb" className="hero-card-avatar" style={{ objectFit: 'cover', objectPosition: 'center 25%' }} />
+                </div>
                 <div>
                   <div className="hero-card-name">Sani Haseeb</div>
                   <div className="hero-card-role">Software Developer · AVP @ Citi</div>
@@ -95,13 +129,16 @@ export default function Hero() {
                 <div className="hero-card-companies-label">Worked at</div>
                 <div className="hero-card-company-list">
                   {companies.map(c => (
-                    <span
+                    <a
                       key={c.name}
-                      className="hero-card-company-badge"
-                      style={{ background: c.color }}
+                      href={c.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hero-card-company-logo"
                     >
-                      {c.name}
-                    </span>
+                      <img src={c.logo} alt={c.name} />
+                      <span className="hero-card-company-name">{c.name}</span>
+                    </a>
                   ))}
                 </div>
               </div>

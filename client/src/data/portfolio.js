@@ -17,12 +17,12 @@ export const skills = [
   {
     category: 'Cloud & Infrastructure',
     icon: '☁️',
-    items: ['AWS S3', 'DynamoDB', 'SNS', 'SQS', 'API Gateway', 'CloudWatch', 'CloudFormation', 'OpenShift', 'Harness'],
+    items: ['AWS S3', 'SNS', 'SQS', 'API Gateway', 'CloudWatch', 'CloudFormation', 'OpenShift', 'Harness'],
   },
   {
     category: 'Databases & Messaging',
     icon: '🗄️',
-    items: ['MongoDB', 'SQL', 'Apache Kafka', 'SQLite'],
+    items: ['MongoDB', 'SQL', 'DynamoDB', 'Apache Kafka', 'SQLite'],
   },
   {
     category: 'Tools & Practices',
@@ -38,12 +38,28 @@ export const skills = [
 
 export const projects = [
   {
-    id: 'stock-app',
-    name: 'StockPulse',
-    subtitle: 'Financial Trading Dashboard',
+    id: 'movr',
+    name: 'MovR',
+    subtitle: 'Real-Time Moving Logistics Platform',
     description:
-      'Real-time stock market dashboard with live price tracking, interactive charts, watchlists, and detailed financial data. Built for traders who want fast, clean market data at a glance.',
-    tech: ['React', 'Vite', 'Finance API', 'CSS'],
+      'A production-grade two-sided marketplace connecting clients with local movers. Features real-time trip tracking via Socket.io, geolocation-based mover matching, in-app chat, Stripe payments, Cloudinary image hosting, and transactional email — deployed across Railway, Vercel, and MongoDB Atlas.',
+    tech: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Stripe', 'Tailwind CSS', 'Railway'],
+    github: 'https://github.com/sanihaseeb/movr-app',
+    live: 'https://movr-app.vercel.app/',
+    gradient: 'linear-gradient(135deg, #F97316 0%, #EA580C 50%, #9A3412 100%)',
+    accentColor: '#F97316',
+    icon: '🚚',
+    preview: 'MovR',
+    screenshot: '/screenshots/movr.png',
+    video: '/videos/movr.webm',
+  },
+  {
+    id: 'stock-app',
+    name: 'Staq',
+    subtitle: 'Live Stock Market Dashboard',
+    description:
+      'Real-time stock market dashboard with live price tracking, interactive charts, watchlists, Shariah compliance filtering, and a live ticker. Built for traders who want fast, clean market data at a glance.',
+    tech: ['React', 'TypeScript', 'Vite', 'Yahoo Finance API', 'WebSockets', 'Recharts'],
     github: 'https://github.com/sanihaseeb/stock-app',
     live: 'https://sanihaseeb.github.io/stock-app/',
     gradient: 'linear-gradient(135deg, #0F172A 0%, #1E3A5F 100%)',
@@ -54,7 +70,7 @@ export const projects = [
   },
   {
     id: 'weather-app',
-    name: 'SkyPulse',
+    name: 'Zephyr',
     subtitle: 'Weather Application',
     description:
       'Real-time weather app with a dynamic aurora-themed UI that adapts visually to weather conditions. Features 7-day forecasts, city autocomplete with debouncing, browser geolocation, and glassmorphism-styled cards.',
@@ -105,6 +121,7 @@ export const experience = [
     period: 'July 2022 – Present',
     location: 'Mississauga, ON',
     logo: 'C',
+    logoImg: '/logos/citi.png',
     color: '#003B70',
     highlights: [
       'Own the full SDLC for a mission-critical deal settlement platform using Java, Spring Boot, and TypeScript.',
@@ -121,6 +138,7 @@ export const experience = [
     period: 'Nov 2023 – Jun 2024',
     location: 'USA – Remote',
     logo: 'A',
+    logoImg: '/logos/architek.jpg',
     color: '#10B981',
     highlights: [
       'Led backend architecture for health-tech v2 MVP from scratch using Node.js, TypeScript, AWS, and Serverless.',
@@ -129,11 +147,26 @@ export const experience = [
     ],
   },
   {
+    company: 'Microsoft (Nuance)',
+    role: 'Software Developer (Co-op)',
+    period: 'May 2021 – Aug 2021',
+    location: 'Montreal, QC – Remote',
+    logo: 'M',
+    logoImg: '/logos/microsoft.png',
+    color: '#0078D4',
+    highlights: [
+      'Redesigned and extended Python test suites post-storage migration — ensuring full coverage across migrated data paths and eliminating regression risk from day one of cutover.',
+      'Automated end-to-end validation pipelines using Harness CI/CD, reducing manual deployment verification from hours to minutes.',
+      'Leveraged Grafana and Prometheus to build observability dashboards that surfaced application behaviour in real time, enabling the team to catch and resolve post-deploy anomalies proactively.',
+    ],
+  },
+  {
     company: 'Manulife',
     role: 'Software Engineer (Co-op)',
     period: 'Jan 2020 – Apr 2020',
     location: 'Montreal, QC',
     logo: 'M',
+    logoImg: '/logos/manulife.svg',
     color: '#00A758',
     highlights: [
       'Built a Slack bot (Node.js) that improved timesheet compliance by 40%.',
