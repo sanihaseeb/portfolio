@@ -86,7 +86,7 @@ export default function Hero() {
                 <div className="hero-stat-label">Years Experience</div>
               </div>
               <div>
-                <div className="hero-stat-value gradient-text">3</div>
+                <div className="hero-stat-value gradient-text">4</div>
                 <div className="hero-stat-label">Companies</div>
               </div>
               <div>
