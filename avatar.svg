@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg)"/>
+
+  <g clip-path="url(#clip)">
+
+    <!-- Sweater / body -->
+    <path d="M30 200 L30 158 Q45 148 65 143 L75 148 Q88 155 100 155 Q112 155 125 148 L135 143 Q155 148 170 158 L170 200 Z" fill="#6B4550"/>
+    <!-- Crew neck -->
+    <path d="M84 148 Q100 155 116 148 L116 142 Q100 149 84 142 Z" fill="#5A3A44"/>
+
+    <!-- Neck -->
+    <rect x="83" y="135" width="34" height="18" rx="8" fill="#C8956A"/>
+
+    <!-- Ear left -->
+    <ellipse cx="57" cy="112" rx="6.5" ry="9" fill="#BD8660"/>
+    <!-- Ear right -->
+    <ellipse cx="143" cy="112" rx="6.5" ry="9" fill="#BD8660"/>
+
+    <!-- Face -->
+    <ellipse cx="100" cy="112" rx="43" ry="50" fill="#D4A574"/>
+
+    <!-- Hair — main mass (dark, swept back) -->
+    <path d="M57 90 Q57 60 75 52 Q88 46 100 46 Q115 46 127 52 Q143 62 143 90
+             Q138 72 128 64 Q114 55 100 55 Q84 55 72 64 Q62 73 57 90 Z" fill="#1a1010"/>
+    <!-- Hair volume on top -->
+    <path d="M63 78 Q70 55 90 49 Q100 46 110 48 Q128 52 137 68 Q130 56 116 51 Q100 46 84 50 Q68 56 63 78Z" fill="#1a1010"/>
+    <!-- Slight hair tuft / sweep -->
+    <path d="M90 50 Q100 44 112 48 Q104 45 100 46 Q95 46 90 50Z" fill="#111"/>
+    <!-- Sideburns / temple hair -->
+    <path d="M57 90 Q58 100 60 108 Q58 98 59 88Z" fill="#1a1010"/>
+    <path d="M143 90 Q142 100 140 108 Q142 98 141 88Z" fill="#1a1010"/>
+
+    <!-- Eyebrows — dark, thick, slightly arched -->
+    <path d="M70 98 Q80 93 93 96" stroke="#1a1010" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M107 96 Q120 93 130 98" stroke="#1a1010" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes -->
+    <!-- Left eye -->
+    <ellipse cx="81" cy="107" rx="9.5" ry="6" fill="white"/>
+    <circle cx="81" cy="107" r="4.5" fill="#2E1A0A"/>
+    <circle cx="81" cy="107" r="2.8" fill="#120800"/>
+    <circle cx="82.8" cy="105.5" r="1.2" fill="white"/>
+    <!-- Left upper lid line -->
+    <path d="M71.5 104.5 Q81 100 90.5 104.5" stroke="#1a1010" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+    <!-- Right eye -->
+    <ellipse cx="119" cy="107" rx="9.5" ry="6" fill="white"/>
+    <circle cx="119" cy="107" r="4.5" fill="#2E1A0A"/>
+    <circle cx="119" cy="107" r="2.8" fill="#120800"/>
+    <circle cx="120.8" cy="105.5" r="1.2" fill="white"/>
+    <!-- Right upper lid line -->
+    <path d="M109.5 104.5 Q119 100 128.5 104.5" stroke="#1a1010" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+    <!-- Nose — bridge and nostrils -->
+    <path d="M97 115 Q94 122 91 128 Q96 131 100 131 Q104 131 109 128 Q106 122 103 115" stroke="#B8784A" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Stubble / beard shadow — jaw and chin -->
+    <ellipse cx="100" cy="148" rx="20" ry="7" fill="#9E6A40" opacity="0.28"/>
+    <!-- Upper lip shadow (moustache area) -->
+    <ellipse cx="100" cy="134" rx="11" ry="3.5" fill="#9E6A40" opacity="0.22"/>
+    <!-- Cheek stubble dots — left -->
+    <circle cx="76" cy="126" r="1.1" fill="#8A5A34" opacity="0.35"/>
+    <circle cx="73" cy="131" r="1.1" fill="#8A5A34" opacity="0.35"/>
+    <circle cx="79" cy="133" r="1.1" fill="#8A5A34" opacity="0.35"/>
+    <!-- Cheek stubble dots — right -->
+    <circle cx="124" cy="126" r="1.1" fill="#8A5A34" opacity="0.35"/>
+    <circle cx="127" cy="131" r="1.1" fill="#8A5A34" opacity="0.35"/>
+    <circle cx="121" cy="133" r="1.1" fill="#8A5A34" opacity="0.35"/>
+
+    <!-- Mouth — gentle closed smile -->
+    <path d="M88 139 Q100 147 112 139" stroke="#A0664A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- Upper lip definition -->
+    <path d="M90 136 Q96 133 100 134.5 Q104 133 110 136" stroke="#A0664A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+  </g>
+</svg>

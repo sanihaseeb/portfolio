@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48">
+  <!-- Red arc above the i -->
+  <path d="M66 6 A10 10 0 0 1 86 6" stroke="#EE1C25" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- citi wordmark -->
+  <text x="8" y="38" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#003B8E" letter-spacing="-1">citi</text>
+</svg>
