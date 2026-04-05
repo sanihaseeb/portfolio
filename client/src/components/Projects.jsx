@@ -97,7 +97,7 @@ export default function Projects() {
                   </ul>
                 )}
 
-                <TechPills tech={project.tech} max={6} />
+                <TechPills tech={project.tech} max={8} />
 
                 <div className="project-card-footer" style={{ padding: 0 }}>
                   <a href={project.github} target="_blank" rel="noreferrer" className="project-link">
@@ -146,7 +146,7 @@ export default function Projects() {
                   </ul>
                 )}
 
-                <TechPills tech={project.tech} />
+                <TechPills tech={project.tech} max={7} />
               </div>
 
               <div className="project-card-footer">
