@@ -7,9 +7,9 @@
   --color-accent-dark:   #1D4ED8;
   --color-accent-light:  #EFF6FF;
 
-  /* Secondary accent (violet) */
-  --color-accent-2:        #8B5CF6;
-  --color-accent-2-light:  #F5F3FF;
+  /* Secondary accent (teal) */
+  --color-accent-2:        #06B6D4;
+  --color-accent-2-light:  #CCFBF1;
 
   /* Backgrounds */
   --color-bg:           #FFFFFF;
@@ -27,7 +27,7 @@
 
   /* Gradients */
   --gradient-primary:  linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
-  --gradient-hero-bg:  linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 100%);
+  --gradient-hero-bg:  linear-gradient(135deg, #EFF6FF 0%, #CCFBF1 100%);
 
   /* Shadows */
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
@@ -55,4 +55,29 @@
   /* Transitions */
   --transition:      0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+html.dark {
+  --color-accent:        #60A5FA;
+  --color-accent-dark:   #3B82F6;
+  --color-accent-light:  rgba(96, 165, 250, 0.12);
+  --color-accent-2:        #22D3EE;
+  --color-accent-2-light:  rgba(34, 211, 238, 0.12);
+  --color-bg:           #0F172A;
+  --color-bg-secondary: #1E293B;
+  --color-bg-tertiary:  #334155;
+  --color-text-primary:   #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted:     #64748B;
+  --color-border: #334155;
+  --color-card:   #1E293B;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 32px rgba(0,0,0,0.4);
+  --shadow-xl: 0 20px 48px rgba(0,0,0,0.5);
+  --shadow-accent: 0 8px 24px rgba(96, 165, 250, 0.25);
+  --gradient-hero-bg: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%);
 }

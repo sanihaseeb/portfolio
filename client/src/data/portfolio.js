@@ -43,15 +43,25 @@ export const projects = [
     subtitle: 'Real-Time Moving Logistics Platform',
     description:
       'A production-grade two-sided marketplace connecting clients with local movers. Features real-time trip tracking via Socket.io, geolocation-based mover matching, in-app chat, Stripe payments, Cloudinary image hosting, and transactional email — deployed across Railway, Vercel, and MongoDB Atlas.',
+    highlights: [
+      'Real-time mover matching via Socket.io',
+      'Interactive map with live geolocation',
+      'In-app chat, Stripe payments & reviews',
+      'Full trip lifecycle: request → track → pay',
+    ],
     tech: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Stripe', 'Tailwind CSS', 'Railway'],
     github: 'https://github.com/sanihaseeb/movr-app',
     live: 'https://movr-app.vercel.app/',
     gradient: 'linear-gradient(135deg, #F97316 0%, #EA580C 50%, #9A3412 100%)',
     accentColor: '#F97316',
     icon: '🚚',
-    preview: 'MovR',
-    screenshot: '/screenshots/movr.png',
-    video: '/videos/movr.webm',
+    featured: true,
+    screenshots: [
+      '/screenshots/movr-landing.png',
+      '/screenshots/movr-home.png',
+      '/screenshots/movr-mover.png',
+      '/screenshots/movr-profile.png',
+    ],
   },
   {
     id: 'stock-app',
@@ -59,6 +69,12 @@ export const projects = [
     subtitle: 'Live Stock Market Dashboard',
     description:
       'Real-time stock market dashboard with live price tracking, interactive charts, watchlists, Shariah compliance filtering, and a live ticker. Built for traders who want fast, clean market data at a glance.',
+    highlights: [
+      'Live price streaming via WebSockets',
+      'Interactive charts with Recharts',
+      'Shariah compliance filter',
+      'Watchlist & portfolio management',
+    ],
     tech: ['React', 'TypeScript', 'Vite', 'Yahoo Finance API', 'WebSockets', 'Recharts'],
     github: 'https://github.com/sanihaseeb/stock-app',
     live: 'https://sanihaseeb.github.io/stock-app/',
@@ -74,6 +90,12 @@ export const projects = [
     subtitle: 'Weather Application',
     description:
       'Real-time weather app with a dynamic aurora-themed UI that adapts visually to weather conditions. Features 7-day forecasts, city autocomplete with debouncing, browser geolocation, and glassmorphism-styled cards.',
+    highlights: [
+      'Aurora UI adapts to live conditions',
+      '7-day forecast & hourly breakdown',
+      'City autocomplete with debouncing',
+      'Browser geolocation & favourites',
+    ],
     tech: ['React', 'Vite', 'Open-Meteo API', 'CSS'],
     github: 'https://github.com/sanihaseeb/weather-app',
     live: 'https://sanihaseeb.github.io/weather-app/',
@@ -89,6 +111,12 @@ export const projects = [
     subtitle: 'Real-Time Messaging',
     description:
       'Full-stack real-time chat application with private 1-on-1 messaging, a shared general channel, live presence indicators, typing status, persistent message history, and JWT-secured authentication.',
+    highlights: [
+      'Private DMs & shared #general channel',
+      'Live presence & typing indicators',
+      'JWT auth & persistent history',
+      'Built on Socket.IO & SQLite',
+    ],
     tech: ['React', 'Node.js', 'Socket.IO', 'SQLite', 'JWT', 'Express'],
     github: 'https://github.com/sanihaseeb/chat-app',
     live: null,
@@ -126,7 +154,9 @@ export const experience = [
     highlights: [
       'Own the full SDLC for a mission-critical deal settlement platform using Java, Spring Boot, and TypeScript.',
       'Architected an in-house Entitlements Microservice, eliminating third-party dependencies and reducing downtime.',
-      'Migrated 11 microservices to Java 17 and Spring Boot 3.x, resolving security vulnerabilities.',
+      'Led the migration of 11 microservices to Java 21 and Spring Boot 3.x, driving end-to-end vulnerability remediation and eliminating critical CVEs across the service fleet.',
+      'Built an event-driven audit trail system streaming real-time data change events to a dedicated Kafka topic, ensuring full traceability and financial compliance across the platform.',
+      'Designed and built the Expense Shell module from scratch with multi-tier entitlements, notifications, and approval APIs powering a full audit workflow from submission through approval; coordinated delivery across 3 cross-functional teams.',
       'Integrated Claude Code, Devin, GitHub Copilot, and Gemini into the team\'s dev workflow — increasing throughput by 40% and cutting review cycles significantly.',
       'Built LLM-powered tooling directly into internal codebases via API integrations with GPT-4 and Claude.',
       'Mentored and onboarded 6 engineers within a year across the full development cycle.',

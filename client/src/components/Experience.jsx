@@ -24,8 +24,18 @@ export default function Experience() {
                 <div className="exp-role">{job.role}</div>
                 <div className="exp-company">{job.company}</div>
                 <div className="exp-meta">
-                  <span className="exp-meta-item">📅 {job.period}</span>
-                  <span className="exp-meta-item">📍 {job.location}</span>
+                  <span className="exp-meta-item">
+                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="1" y="2" width="14" height="13" rx="2"/><path d="M1 6h14"/><path d="M5 1v2M11 1v2"/>
+                    </svg>
+                    {job.period}
+                  </span>
+                  <span className="exp-meta-item">
+                    <svg width="11" height="13" viewBox="0 0 12 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M6 1C3.24 1 1 3.24 1 6c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z"/><circle cx="6" cy="6" r="1.5"/>
+                    </svg>
+                    {job.location}
+                  </span>
                 </div>
                 <ul className="exp-highlights">
                   {job.highlights.map((h, j) => (

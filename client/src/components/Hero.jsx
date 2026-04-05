@@ -53,10 +53,6 @@ export default function Hero() {
         <div className="hero-inner">
           {/* Left: Text */}
           <div>
-            <div className="hero-greeting fade-up visible">
-              <span>👋</span> Available for new opportunities
-            </div>
-
             <h1 className="hero-name fade-up visible delay-1">
               <span className="gradient-text">Sani</span>
               <br />Haseeb
@@ -115,8 +111,8 @@ export default function Hero() {
               </div>
 
               <div className="hero-card-status" style={{ marginTop: '8px', background: 'rgba(99,102,241,0.08)', borderColor: 'rgba(99,102,241,0.25)' }}>
-                <span style={{ fontSize: '12px' }}>🤖</span>
-                AI-integrated dev · 40% throughput gain
+                <img src="/logos/mcgill-coa.png" alt="McGill" style={{ width: '18px', height: '18px' }} />
+                Software Engineer, McGill University 2021
               </div>
 
               <div className="hero-card-skills">
