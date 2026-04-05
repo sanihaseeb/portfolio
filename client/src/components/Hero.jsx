@@ -32,10 +32,10 @@ function useTypingTitle() {
 const topSkills = ['Java', 'TypeScript', 'React', 'Node.js', 'AWS', 'LLM APIs']
 
 const companies = [
-  { name: 'Citi',      logo: '/logos/citi.png',      url: 'https://www.citigroup.com' },
-  { name: 'Architek',  logo: '/logos/architek.jpg',  url: 'https://www.architekhealth.com' },
-  { name: 'Manulife',  logo: '/logos/manulife.svg',  url: 'https://www.manulife.com' },
-  { name: 'Microsoft', logo: '/logos/microsoft.png', url: 'https://www.nuance.com' },
+  { name: 'Citi',      logo: 'logos/citi.png',      url: 'https://www.citigroup.com' },
+  { name: 'Architek',  logo: 'logos/architek.jpg',  url: 'https://www.architekhealth.com' },
+  { name: 'Manulife',  logo: 'logos/manulife.svg',  url: 'https://www.manulife.com' },
+  { name: 'Microsoft', logo: 'logos/microsoft.png', url: 'https://www.nuance.com' },
 ]
 
 export default function Hero() {
@@ -97,7 +97,7 @@ export default function Hero() {
             <div className="hero-card">
               <div className="hero-card-header">
                 <div className="hero-card-avatar-ring">
-                  <img src="/avatar.png" alt="Sani Haseeb" className="hero-card-avatar" style={{ objectFit: 'cover', objectPosition: 'center 25%' }} />
+                  <img src="avatar.png" alt="Sani Haseeb" className="hero-card-avatar" style={{ objectFit: 'cover', objectPosition: 'center 25%' }} />
                 </div>
                 <div>
                   <div className="hero-card-name">Sani Haseeb</div>
@@ -111,7 +111,7 @@ export default function Hero() {
               </div>
 
               <div className="hero-card-status" style={{ marginTop: '8px', background: 'rgba(99,102,241,0.08)', borderColor: 'rgba(99,102,241,0.25)' }}>
-                <img src="/logos/mcgill-coa.png" alt="McGill" style={{ width: '18px', height: '18px' }} />
+                <img src="logos/mcgill-coa.png" alt="McGill" style={{ width: '18px', height: '18px' }} />
                 Software Engineer, McGill University 2021
               </div>
 

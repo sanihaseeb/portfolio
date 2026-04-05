@@ -2,10 +2,10 @@ import { education } from '../data/portfolio'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const companies = [
-  { name: 'Citigroup',       logo: '/logos/citi.png',      url: 'https://www.citigroup.com' },
-  { name: 'Architek Health', logo: '/logos/architek.jpg',  url: 'https://www.architekhealth.com' },
-  { name: 'Manulife',        logo: '/logos/manulife.svg',  url: 'https://www.manulife.com' },
-  { name: 'Microsoft',       logo: '/logos/microsoft.png', url: 'https://www.nuance.com' },
+  { name: 'Citigroup',       logo: 'logos/citi.png',      url: 'https://www.citigroup.com' },
+  { name: 'Architek Health', logo: 'logos/architek.jpg',  url: 'https://www.architekhealth.com' },
+  { name: 'Manulife',        logo: 'logos/manulife.svg',  url: 'https://www.manulife.com' },
+  { name: 'Microsoft',       logo: 'logos/microsoft.png', url: 'https://www.nuance.com' },
 ]
 
 const stats = [

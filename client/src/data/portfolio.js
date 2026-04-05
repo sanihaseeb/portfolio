@@ -57,10 +57,10 @@ export const projects = [
     icon: '🚚',
     featured: true,
     screenshots: [
-      '/screenshots/movr-landing.png',
-      '/screenshots/movr-home.png',
-      '/screenshots/movr-mover.png',
-      '/screenshots/movr-profile.png',
+      'screenshots/movr-landing.png',
+      'screenshots/movr-home.png',
+      'screenshots/movr-mover.png',
+      'screenshots/movr-profile.png',
     ],
   },
   {
@@ -82,7 +82,7 @@ export const projects = [
     accentColor: '#3B82F6',
     icon: '📈',
     preview: 'StockPulse',
-    screenshot: '/screenshots/stockpulse.png',
+    screenshot: 'screenshots/stockpulse.png',
   },
   {
     id: 'weather-app',
@@ -103,7 +103,7 @@ export const projects = [
     accentColor: '#48CAE4',
     icon: '🌤',
     preview: 'SkyPulse',
-    screenshot: '/screenshots/skypulse.png',
+    screenshot: 'screenshots/skypulse.png',
   },
   {
     id: 'chat-app',
@@ -124,7 +124,7 @@ export const projects = [
     accentColor: '#9D4EDD',
     icon: '💬',
     preview: 'ChatApp',
-    screenshot: '/screenshots/chatapp.png',
+    screenshot: 'screenshots/chatapp.png',
   },
   {
     id: 'notes-cli',
@@ -149,7 +149,7 @@ export const experience = [
     period: 'July 2022 – Present',
     location: 'Mississauga, ON',
     logo: 'C',
-    logoImg: '/logos/citi.png',
+    logoImg: 'logos/citi.png',
     color: '#003B70',
     highlights: [
       'Own the full SDLC for a mission-critical deal settlement platform using Java, Spring Boot, and TypeScript.',
@@ -168,7 +168,7 @@ export const experience = [
     period: 'Nov 2023 – Jun 2024',
     location: 'USA – Remote',
     logo: 'A',
-    logoImg: '/logos/architek.jpg',
+    logoImg: 'logos/architek.jpg',
     color: '#10B981',
     highlights: [
       'Led backend architecture for health-tech v2 MVP from scratch using Node.js, TypeScript, AWS, and Serverless.',
@@ -182,7 +182,7 @@ export const experience = [
     period: 'May 2021 – Aug 2021',
     location: 'Montreal, QC – Remote',
     logo: 'M',
-    logoImg: '/logos/microsoft.png',
+    logoImg: 'logos/microsoft.png',
     color: '#0078D4',
     highlights: [
       'Redesigned and extended Python test suites post-storage migration — ensuring full coverage across migrated data paths and eliminating regression risk from day one of cutover.',
@@ -196,7 +196,7 @@ export const experience = [
     period: 'Jan 2020 – Apr 2020',
     location: 'Montreal, QC',
     logo: 'M',
-    logoImg: '/logos/manulife.svg',
+    logoImg: 'logos/manulife.svg',
     color: '#00A758',
     highlights: [
       'Built a Slack bot (Node.js) that improved timesheet compliance by 40%.',
