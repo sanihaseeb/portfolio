@@ -50,8 +50,7 @@ export default function About() {
               That's translated into a <strong>40% throughput gain</strong> on everything I ship.
             </p>
             <p className="about-text">
-              Outside of work I build side projects to stay sharp — real-time chat, stock dashboards,
-              CLI tools. If it's an interesting engineering problem, I'm probably already tinkering with it.
+              Outside of work I build side projects to stay sharp — real-time platforms (messaging, logistics, trading) and developer tools (CLI, automation). If it's an interesting engineering problem, I'm probably already tinkering with it.
             </p>
 
             <div className="about-education">
