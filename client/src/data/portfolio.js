@@ -64,6 +64,31 @@ export const projects = [
     ],
   },
   {
+    id: 'log-analyzer',
+    name: 'Log Analyzer',
+    subtitle: 'AI-Augmented Error Triage',
+    description:
+      'Production-style log triage tool. Paste raw logs and Gemini clusters errors by root cause, infers likely causes, and suggests concrete fixes — with a full history of every run. Built on FastAPI with structured LLM output via Pydantic response schemas, SQLAlchemy 2.0, and a React + Tailwind frontend.',
+    highlights: [
+      'Root-cause inference with concrete fixes',
+      'Structured Gemini output via Pydantic schemas',
+      'Severity rollup across clusters & anomalies',
+      'Persistent run history — compare incidents over time',
+    ],
+    tech: ['FastAPI', 'Python', 'Gemini', 'Pydantic', 'SQLAlchemy', 'Postgres', 'React', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/sanihaseeb/log-analyzer',
+    live: null,
+    gradient: 'linear-gradient(135deg, #10B981 0%, #059669 50%, #064E3B 100%)',
+    accentColor: '#10B981',
+    icon: '🔍',
+    featured: true,
+    screenshots: [
+      'screenshots/log-analyzer-analyze.png',
+      'screenshots/log-analyzer-history.png',
+      'screenshots/log-analyzer-detail.png',
+    ],
+  },
+  {
     id: 'stock-app',
     name: 'Staq',
     subtitle: 'Live Stock Market Dashboard',
