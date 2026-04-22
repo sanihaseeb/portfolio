@@ -1,22 +1,26 @@
 import { useState, useEffect, useRef } from 'react'
 
-const LABELS = ['Landing', 'Client Home', 'Mover Dashboard', 'Mover Profile']
+function normalize(slide, i) {
+  if (typeof slide === 'string') return { src: slide, label: `Screen ${i + 1}` }
+  return { src: slide.src, label: slide.label ?? `Screen ${i + 1}` }
+}
 
 export default function ScreenCarousel({ slides }) {
+  const normalized = slides.map(normalize)
   const [idx, setIdx] = useState(0)
   const timerRef = useRef(null)
 
   const startTimer = () => {
     clearInterval(timerRef.current)
     timerRef.current = setInterval(() => {
-      setIdx(i => (i + 1) % slides.length)
+      setIdx(i => (i + 1) % normalized.length)
     }, 3500)
   }
 
   useEffect(() => {
     startTimer()
     return () => clearInterval(timerRef.current)
-  }, [slides.length])
+  }, [normalized.length])
 
   const goTo = (i) => {
     setIdx(i)
@@ -26,20 +30,20 @@ export default function ScreenCarousel({ slides }) {
   return (
     <div className="carousel">
       <div className="carousel-slides">
-        {slides.map((src, i) => (
+        {normalized.map(({ src, label }, i) => (
           <img
             key={src}
             src={src}
-            alt={LABELS[i] ?? `Screen ${i + 1}`}
+            alt={label}
             className={`carousel-slide ${i === idx ? 'active' : ''}`}
           />
         ))}
       </div>
 
       <div className="carousel-footer">
-        <span className="carousel-label">{LABELS[idx] ?? `Screen ${idx + 1}`}</span>
+        <span className="carousel-label">{normalized[idx].label}</span>
         <div className="carousel-dots">
-          {slides.map((_, i) => (
+          {normalized.map((_, i) => (
             <button
               key={i}
               className={`carousel-dot ${i === idx ? 'active' : ''}`}

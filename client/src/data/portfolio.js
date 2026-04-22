@@ -57,10 +57,10 @@ export const projects = [
     icon: '🚚',
     featured: true,
     screenshots: [
-      'screenshots/movr-landing.png',
-      'screenshots/movr-home.png',
-      'screenshots/movr-mover.png',
-      'screenshots/movr-profile.png',
+      { src: 'screenshots/movr-landing.png', label: 'Landing' },
+      { src: 'screenshots/movr-home.png', label: 'Client Home' },
+      { src: 'screenshots/movr-mover.png', label: 'Mover Dashboard' },
+      { src: 'screenshots/movr-profile.png', label: 'Mover Profile' },
     ],
   },
   {
@@ -83,9 +83,9 @@ export const projects = [
     icon: '🔍',
     featured: true,
     screenshots: [
-      'screenshots/log-analyzer-analyze.png',
-      'screenshots/log-analyzer-history.png',
-      'screenshots/log-analyzer-detail.png',
+      { src: 'screenshots/log-analyzer-analyze.png', label: 'Paste & Analyze' },
+      { src: 'screenshots/log-analyzer-history.png', label: 'Run History' },
+      { src: 'screenshots/log-analyzer-detail.png', label: 'Analysis Detail' },
     ],
   },
   {
